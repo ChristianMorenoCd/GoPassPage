@@ -1,0 +1,103 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap');
+ /* #9be644; */
+
+/* Estilos aplicado a toda la pagina */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* Inicio estilos header */
+header{
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/img/header-fondo.png");
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.container-header{
+    background-color: rgba(0, 0, 0, .8);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container-header-logo-gopass{
+    padding-left: 15px;
+    align-items: center;
+}
+.container-header-logo-gopass img{
+    width: 100px;
+}
+.container-header-button-login{
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    padding-right: 15px;
+}
+.container-header-button-login a{
+    color: #9be644;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+}
+.container-header-text{
+    background-color: rgba(0, 0, 0, .8);
+    padding-left: 15px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 80%;
+    align-items: center;
+} 
+.container-header-text P{
+    font-size: 85px;
+    color: #fff;
+    line-height: 90%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container-header-nav .nav-header ul{
+    background-color: rgba(0, 0, 0, .8);
+    margin: 0;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.container-header-nav .nav-header ul li{
+   
+    display: grid;
+    justify-items: center;
+}
+.container-header-nav .nav-header ul li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    color: #9be644;  
+    position: relative;
+    padding-bottom: 10px; 
+}
+.container-header-nav .nav-header ul li a::before{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #9be644;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s;
+}
+.container-header-nav .nav-header ul li a:hover::before{
+    width: 100%;
+}
+
+
+    
