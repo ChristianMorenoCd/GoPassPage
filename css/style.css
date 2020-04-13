@@ -110,59 +110,106 @@ header {
 .container-header-nav .nav-header ul li a:hover::before {
     width: 100%;
 }
+
 /* Fin estilos header */
 
 /* Inicio estilos seccion Home */
-.home{
+.home {
     /* height: 600px; */
     background-image: url("../assets/img/home-fondo.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%; 
-    margin: 25px 0 ;
+    background-size: 100%;
+    margin: 25px 0;
 }
-.home-container{
+
+.home-container {
     margin: 0;
     display: grid;
     grid-template-rows: 2fr 150px 200px;
     grid-template-columns: 100%;
     justify-items: center;
 }
-.home-container-text{
+
+.home-container-text {
     display: grid;
     align-items: center;
     margin-top: 5%;
 }
-.home-container-text p{
+
+.home-container-text p {
     text-align: center;
     padding: 0% 15%;
     font-size: 22px;
     color: gray;
     font-weight: bold;
 }
-.home-container-text p strong{
+
+.home-container-text p strong {
     color: #9be644;
     font-size: 26px;
 }
 
-.home-container-image{
+.home-container-image {
     margin: 0;
     padding: 0;
     display: grid;
     justify-items: center;
 }
-.home-container-image img{
+
+.home-container-image img {
     width: 450px;
 }
 
-.home-container-link{
-  margin-top: 10px;
+.home-container-link {
+    margin-top: 10px;
 }
 
-.home-container-link a{
+.home-container-link a {
     text-transform: uppercase;
     color: gray;
     font-weight: bold;
     font-size: 22px;
     border-bottom: 2px solid grey;
 }
+/* Fin estilos seccion home */
+/* Inicio estilos seccion description */
+.description{
+    background-image: url("../assets/img/description-fondo.png");
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    align-items: center;
+}
+.container-description{
+    padding: 5%;
+}
+.container-description-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 90%;
+    margin: 0;
+}
+.container-description-text{
+    color: gray;
+    font-size: 28px;
+    line-height: 95%;
+    margin: 0;
+    text-align: justify;
+}
+.container-description-image{
+    padding: 5% 0;
+    display: grid;
+    justify-items: end;
+    align-items: center;
+}
+.container-description-image img{
+    width: 600px;
+}
+/* Fin estilos seccion description */
