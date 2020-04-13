@@ -1,63 +1,72 @@
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap');
- /* #9be644; */
+/* #9be644; */
 
 /* Estilos aplicado a toda la pagina */
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
 }
 
 /* Inicio estilos header */
-header{
+header {
     margin: 0;
     padding: 0;
     background-image: url("../assets/img/header-fondo.png");
     background-position: center;
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
 }
-.container-header{
+
+.container-header {
     background-color: rgba(0, 0, 0, .8);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.container-header-logo-gopass{
+
+.container-header-logo-gopass {
     padding-left: 15px;
     align-items: center;
 }
-.container-header-logo-gopass img{
+
+.container-header-logo-gopass img {
     width: 100px;
 }
-.container-header-button-login{
+
+.container-header-button-login {
     display: grid;
     align-items: center;
     justify-content: end;
     padding-right: 15px;
 }
-.container-header-button-login a{
+
+.container-header-button-login a {
     color: #9be644;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 25px;
 }
-.container-header-text{
+
+.container-header-text {
     background-color: rgba(0, 0, 0, .8);
     padding-left: 15px;
     height: 350px;
     display: grid;
     grid-template-columns: 80%;
     align-items: center;
-} 
-.container-header-text P{
+}
+
+.container-header-text P {
     font-size: 85px;
     color: #fff;
     line-height: 90%;
@@ -65,27 +74,29 @@ header{
     text-transform: uppercase;
 }
 
-.container-header-nav .nav-header ul{
+.container-header-nav .nav-header ul {
     background-color: rgba(0, 0, 0, .8);
     margin: 0;
     padding: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.container-header-nav .nav-header ul li{
-   
+
+.container-header-nav .nav-header ul li {
     display: grid;
     justify-items: center;
 }
-.container-header-nav .nav-header ul li a{
+
+.container-header-nav .nav-header ul li a {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 25px;
-    color: #9be644;  
+    color: #9be644;
     position: relative;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
-.container-header-nav .nav-header ul li a::before{
+
+.container-header-nav .nav-header ul li a::before {
     content: "";
     display: block;
     width: 50%;
@@ -95,9 +106,63 @@ header{
     bottom: 0;
     transition: all 1s;
 }
-.container-header-nav .nav-header ul li a:hover::before{
+
+.container-header-nav .nav-header ul li a:hover::before {
     width: 100%;
 }
+/* Fin estilos header */
 
+/* Inicio estilos seccion Home */
+.home{
+    /* height: 600px; */
+    background-image: url("../assets/img/home-fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; 
+    margin: 25px 0 ;
+}
+.home-container{
+    margin: 0;
+    display: grid;
+    grid-template-rows: 2fr 150px 200px;
+    grid-template-columns: 100%;
+    justify-items: center;
+}
+.home-container-text{
+    display: grid;
+    align-items: center;
+    margin-top: 5%;
+}
+.home-container-text p{
+    text-align: center;
+    padding: 0% 15%;
+    font-size: 22px;
+    color: gray;
+    font-weight: bold;
+}
+.home-container-text p strong{
+    color: #9be644;
+    font-size: 26px;
+}
 
-    
+.home-container-image{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: center;
+}
+.home-container-image img{
+    width: 450px;
+}
+
+.home-container-link{
+  margin-top: 10px;
+}
+
+.home-container-link a{
+    text-transform: uppercase;
+    color: gray;
+    font-weight: bold;
+    font-size: 22px;
+    border-bottom: 2px solid grey;
+}
