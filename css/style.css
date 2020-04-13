@@ -32,10 +32,12 @@ header {
     background-color: rgba(0, 0, 0, .8);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 90px;
+    padding-top: 20px;
 }
 
 .container-header-logo-gopass {
-    padding-left: 15px;
     align-items: center;
 }
 
@@ -44,10 +46,10 @@ header {
 }
 
 .container-header-button-login {
+    padding-right: 25px;
     display: grid;
     align-items: center;
     justify-content: end;
-    padding-right: 15px;
 }
 
 .container-header-button-login a {
@@ -59,7 +61,7 @@ header {
 
 .container-header-text {
     background-color: rgba(0, 0, 0, .8);
-    padding-left: 15px;
+    padding-left: 50px;
     height: 350px;
     display: grid;
     grid-template-columns: 80%;
@@ -138,13 +140,17 @@ header {
 
 .home-container-text p {
     text-align: center;
+    margin: 0;
     padding: 0% 15%;
     font-size: 22px;
     color: gray;
     font-weight: bold;
 }
+.home-container-text  .text-strong{
+    color: black;
+}
 
-.home-container-text p strong {
+.home-container-text .text-strong strong {
     color: #9be644;
     font-size: 26px;
 }
@@ -197,6 +203,7 @@ header {
     font-size: 65px;
     line-height: 90%;
     margin: 0;
+    color: gray;
 }
 
 .container-description-text {
