@@ -112,7 +112,6 @@ header {
 }
 
 /* Fin estilos header */
-
 /* Inicio estilos seccion Home */
 .home {
     /* height: 600px; */
@@ -172,9 +171,10 @@ header {
     font-size: 22px;
     border-bottom: 2px solid grey;
 }
+
 /* Fin estilos seccion home */
 /* Inicio estilos seccion description */
-.description{
+.description {
     background-image: url("../assets/img/description-fondo.png");
     background-position: right bottom;
     background-size: cover;
@@ -186,30 +186,274 @@ header {
     padding-top: 15px;
     align-items: center;
 }
-.container-description{
+
+.container-description {
     padding: 2%;
 }
-.container-description-title{
+
+.container-description-title {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 65px;
     line-height: 90%;
     margin: 0;
 }
-.container-description-text{
+
+.container-description-text {
     color: gray;
     font-size: 28px;
     line-height: 95%;
     margin: 0;
     text-align: justify;
 }
-.container-description-image{
+
+.container-description-image {
     padding: 2% 0;
     display: grid;
     justify-items: end;
     align-items: center;
 }
-.container-description-image img{
+
+.container-description-image img {
     width: 600px;
 }
+
 /* Fin estilos seccion description */
+/* Inicio estilos items */
+.items {
+    background-color: #499234;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 200px;
+    padding: 0 5%;
+}
+
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+}
+
+.container-items-box {
+    padding: 15px;
+    text-align: center;
+}
+
+.container-items-box-image {
+    height: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-items-box-image img {
+    width: 150px;
+}
+
+.image-little img {
+    width: 250px;
+}
+
+.container-items-box-title p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container-items-box-text p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container-items-image {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+}
+
+/* Fin estilos items */
+/* Inicio estilos Footer */
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 25px;
+    background-color: black;
+    color: #fff;
+}
+
+.footer-container-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.footer-container-contact-image {
+    display: grid;
+    justify-items: center;
+}
+
+.footer-container-contact-form {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-container-contact-form p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.footer-container-contact-form form {
+
+    padding: 5px;
+    display: grid;
+    width: 350px;
+}
+
+.footer-container-contact-form form input {
+    border-radius: 13px;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    outline: none;
+}
+
+.footer-container-contact-form form textarea {
+    outline: none;
+    border: 0;
+    border-radius: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100px;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-container-contact-form form button {
+
+    background-color: #9be644;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 0;
+    height: 42px;
+    border-radius: 13px;
+    margin: 0 52px;
+    cursor: pointer;
+}
+
+.footer-container-contact-form form button:hover {
+    background-color: rgba(40, 128, 6, 1);
+    color: #fff;
+}
+
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 18px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: start;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0px;
+    width: 0;
+}
+
+.container-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid #499234;
+}
+
+.container-checkbox:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.container-checkbox input:checked~.checkmark {
+    background-color: rgba(40, 128, 6, 1);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.footer-container-info{
+    display: block;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+}
+.footer-container-info-box{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.footer-container-info-box-image{
+    margin: 15px;
+    display: grid;
+    justify-content: center;
+}
+.footer-container-info-box-image img{
+    width: 50px;
+}
+.footer-container-info-box-data p{
+    line-height: 15%;
+    font-size: 22px;
+    font-weight: 700;
+    color: #9be644;
+}
+
+.footer-container-info-icons{
+    padding-left: 17px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.footer-container-info-icons a{
+    margin: 10px;
+    color: #9be644;
+    
+}
+
+
+/* Fin estilos Footer */
