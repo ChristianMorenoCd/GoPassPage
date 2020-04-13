@@ -187,7 +187,7 @@ header {
     align-items: center;
 }
 .container-description{
-    padding: 5%;
+    padding: 2%;
 }
 .container-description-title{
     text-transform: uppercase;
@@ -204,7 +204,7 @@ header {
     text-align: justify;
 }
 .container-description-image{
-    padding: 5% 0;
+    padding: 2% 0;
     display: grid;
     justify-items: end;
     align-items: center;
