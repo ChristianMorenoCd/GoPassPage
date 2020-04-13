@@ -276,10 +276,19 @@ header {
 }
 
 .container-items-image {
+    margin: 0;
+    padding: 0;
     display: grid;
     justify-items: end;
+    justify-self: end;
     align-items: center;
 }
+.container-items-image img{
+    margin: 0;
+    padding: 0;
+    width: 550px;
+}
+
 
 /* Fin estilos items */
 /* Inicio estilos Footer */
