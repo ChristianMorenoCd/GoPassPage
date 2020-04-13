@@ -147,7 +147,7 @@ header {
     font-weight: bold;
 }
 .home-container-text  .text-strong{
-    color: black;
+    color: #585857;
 }
 
 .home-container-text .text-strong strong {
@@ -203,7 +203,7 @@ header {
     font-size: 65px;
     line-height: 90%;
     margin: 0;
-    color: gray;
+    color: #585857;
 }
 
 .container-description-text {
